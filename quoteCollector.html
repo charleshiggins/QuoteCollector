@@ -1,0 +1,34 @@
+
+<html>
+  <head>
+	<meta charset="utf-8">
+	 <title>Quote Collector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="qcScripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+    <h1>Quote Collector</h1>
+    </header>
+    <form id = "searchControls">
+      <select id = "searchSelect">
+          <option value="author">Author</option>
+          <option value="book">Book</option>
+      </select>
+      <input type="search" name = "searchBar" placeholder="Search by Author or Book..."></input>
+      <div id ="add">+</div>
+    </form>
+    <form id = "addQuote">
+      <input type="text" name="quote" id = 'qText'>
+      <input type="text" name="pageNumber" id= 'pgnum'>
+      <select name = "chooseBook" id = "chooseBook"></select>
+        <input type="submit" value="Add Quote">
+      </select>
+    </form>
+    <div id = "res"></div>
+    <div id = "auth"></div>
+  </body>
+</html>
